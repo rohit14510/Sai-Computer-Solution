@@ -214,12 +214,11 @@
           <h2 class="fw-bold  text-center text-lg-start text-uppercase">Send us a Message</h2>
           <p class="text-center text-lg-start">If you have any questions about what we offer for consumers or for
             business, you can always email us or call us via the below details. We’ll reply within 24 hours..</p>
-          <form action="https://api.web3forms.com/submit" method="POST">
+          <form action="send.php" method="post">
             <div class="row">
-              <input type="hidden" name="access_key" value="">
               <div class="form-group col-md-6 mb-3">
                 <label class="" for="">Full Name:</label>
-                <input type="text" name="Full_name" class="form-control" placeholder="Your Name" />
+                <input type="text" name="name" class="form-control" placeholder="Your Name" />
               </div>
               <div class="form-group col-md-6 mb-3">
                 <label class="" for="">Email Address:</label>
@@ -233,15 +232,15 @@
               </div>
               <div class="form-group col-md-6 mb-3">
                 <label class="" for="">Phone Numbers:</label>
-                <input type="text" name="Phone-Number" class="form-control" placeholder="Phone" />
+                <input type="text" name="phone" class="form-control" placeholder="Phone" />
               </div>
             </div>
             <div class="form-group mb-3">
               <label class="" for="">Your Message:</label>
-              <textarea class="form-control" name="Your-Message" rows="5" placeholder="Message"></textarea>
+              <textarea class="form-control" name="message" rows="5" placeholder="Message"></textarea>
             </div>
             <div class="text-center ">
-              <button type="submit" class="form_btn">Send Message</button>
+              <button type="submit" name="submit" value="submit" class="form_btn">Send Message</button>
             </div>
           </form>
 
