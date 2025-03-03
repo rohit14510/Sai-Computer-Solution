@@ -97,6 +97,49 @@
     </div>
   </header>
   <!-- ===header-section-end=== -->
+        <!-- pop up Form -->
+<div class="modal fade" id="popupForm" tabindex="-1" aria-labelledby="popupFormLabel" aria-hidden="true" style="z-index: 100000;">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="popupFormLabel">Contact Us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <!-- Form -->
+        <form action="send.php" method="post">
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                  <label for="name">Full Name:</label>
+                  <input type="text" name="name" class="form-control" placeholder="Your Name" required />
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="email">Email Address:</label>
+                  <input type="email" name="email" class="form-control" placeholder="Enter Email" required />
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col-md-6 mb-3">
+                  <label for="subject">Subject:</label>
+                  <input type="text" name="subject" class="form-control" placeholder="Subject" required />
+                </div>
+                <div class="form-group col-md-6 mb-3">
+                  <label for="phone">Phone Numbers:</label>
+                  <input type="text" name="phone" class="form-control" placeholder="Phone" required />
+                </div>
+            </div>
+            <div class="form-group mb-3">
+                <label for="message">Your Message:</label>
+                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+            </div>
+            <div class="text-center">
+                <button type="submit" name="submit" value="submit" class="popform_btn">Send Message</button>
+            </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
   <!-- ===Call-Section-Start=== -->
   <div class="what">
     <a href=" https://wa.me/919873246742" target="_blank">

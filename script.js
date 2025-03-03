@@ -48,3 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }).mount();
 });
+// popup form
+document.addEventListener("DOMContentLoaded", function() {
+    var popup = new bootstrap.Modal(document.getElementById("popupForm"));
+    popup.show();
+});

@@ -741,6 +741,13 @@ header {
     color: #572DB8;
     font-weight: 700;
   }
+  .popform_btn {
+    padding: 10px 20px;
+    background-color: #572DB8;
+    border: none;
+    color: #fff;
+    font-weight: 700;
+  }
   
 /* ---Footer-Section-Start--- */
 
